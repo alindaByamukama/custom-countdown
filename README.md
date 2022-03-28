@@ -4,3 +4,5 @@
 ### Resources
 - [Pixabay Stock Videos](https://pixabay.com/videos/)
 - [Video Compression Tool](https://www.youcompress.com/)
+- [Mozilla - Form Accessibility](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/forms/Basic_form_hints)
+- [Google Fonts](https://fonts.google.com/)
