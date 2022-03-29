@@ -13,3 +13,5 @@
 - [Mozilla - Submit Event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/submit_event)
 - [W3Schools - Prevent Default](https://www.w3schools.com/jsref/event_preventdefault.asp)
 - [W3Schools - Js Timing Events](https://www.w3schools.com/js/js_timing.asp)
+- [Mozilla - JSON Stringify](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify)
+- [Mozilla - JSON Parse](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify)
