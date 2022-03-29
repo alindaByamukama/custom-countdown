@@ -8,7 +8,7 @@ const countdownBtn = document.getElementById('countdown-button')
 const timeElements = document.querySelectorAll('span')
 
 let countdownTitle = ' '
-let coutndownDate = ' '
+let countdownDate = ' '
 let countdownValue = Date
 
 const second = 1000
@@ -49,11 +49,11 @@ function updateDOM() {
 function updateCountdown(e) {
     e.preventDefault()
     countdownTitle = e.srcElement[0].value
-    coutndownDate = e.srcElement[1].value
-    console.log(countdownTitle, coutndownDate)
+    countdownDate = e.srcElement[1].value
+    console.log(countdownTitle, countdownDate)
 
     // get number version fo current date
-    countdownValue = new Date(coutndownDate).getTime()
+    countdownValue = new Date(countdownDate).getTime()
     console.log('countdown value:', countdownValue)
     updateDOM()
 }
