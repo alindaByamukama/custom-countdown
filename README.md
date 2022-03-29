@@ -6,3 +6,7 @@
 - [Video Compression Tool](https://www.youcompress.com/)
 - [Mozilla - Form Accessibility](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/forms/Basic_form_hints)
 - [Google Fonts](https://fonts.google.com/)
+- [Mozilla - Date Input](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date)
+- [W3Schools - Date Object](https://www.w3schools.com/jsref/jsref_obj_date.asp)
+- [Mozilla - Date toISOString](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toISOString)
+- [W3Schools - String Split](https://www.w3schools.com/jsref/jsref_split.asp)
