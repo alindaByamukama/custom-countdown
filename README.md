@@ -10,3 +10,5 @@
 - [W3Schools - Date Object](https://www.w3schools.com/jsref/jsref_obj_date.asp)
 - [Mozilla - Date toISOString](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toISOString)
 - [W3Schools - String Split](https://www.w3schools.com/jsref/jsref_split.asp)
+- [Mozilla - Submit Event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/submit_event)
+- [W3Schools - Prevent Default](https://www.w3schools.com/jsref/event_preventdefault.asp)
