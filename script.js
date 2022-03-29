@@ -17,6 +17,10 @@ const minute = second * 60
 const hour = minute * 60
 const day = hour * 24 
 
+const completeEl = document.getElementById('complete')
+const completeElInfo = document.getElementById('complete-info')
+const completeBtn = document.getElementById('complete-button')
+
 // set date min with todays date
 const today = new Date().toISOString().split('T')[0]
 dateEL.setAttribute('min', today)
@@ -34,17 +38,25 @@ function updateDOM() {
         const seconds = Math.floor((distance % minute) / second)
         console.log(days, hours, minutes, seconds)
 
-        // populate countdown
-        countdownElTitle.textContent = `${countdownTitle}`
-        timeElements[0].textContent = `${days}`
-        timeElements[1].textContent = `${hours}`
-        timeElements[2].textContent = `${minutes}`
-        timeElements[3].textContent = `${seconds}`
-
         // hide input container
         inputContainer.hidden = true
-        // show countdown container
-        countdownEL.hidden = false
+
+        // if countdown ended show complete
+        if (distance < 0) {
+            countdownEL.hidden = true
+            clearInterval(countdownActive)
+            completeElInfo.textContent = `${countdownTitle} finished on ${countdownDate}`
+            completeEl.hidden = false
+        } else {
+            // show the countdown in progress & populate countdown
+            countdownElTitle.textContent = `${countdownTitle}`
+            timeElements[0].textContent = `${days}`
+            timeElements[1].textContent = `${hours}`
+            timeElements[2].textContent = `${minutes}`
+            timeElements[3].textContent = `${seconds}`
+            completeEl.hidden = true
+            countdownEL.hidden = false
+        }
     }, second)
 }
 
@@ -69,6 +81,7 @@ function updateCountdown(e) {
 function reset() {
     // hide countdowns, show input
     countdownEL.hidden = true
+    completeEl.hidden = true
     inputContainer.hidden = false 
     // stop countdown
     clearInterval(countdownActive)
@@ -80,3 +93,4 @@ function reset() {
 // event listeners
 countdownForm.addEventListener('submit', updateCountdown)
 countdownBtn.addEventListener('click', reset)
+completeBtn.addEventListener('click', reset)
