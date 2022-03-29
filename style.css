@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@1&display=swap');
 
 html {
   box-sizing: border-box;
@@ -10,7 +10,7 @@ body {
   overflow-y: hidden;
   display: flex;
   align-items: center;
-
+  font-family: 'Nunito', sans-serif, monospace;
 }
 
 /* Video Background */
@@ -42,14 +42,14 @@ video {
 .container {
   min-width: 580px;
   min-height: 304px;
-  color: black;
+  color: #fff;
   margin: 0 auto;
   padding: 25px 50px;
   border-radius: 5px;
   z-index: 2;
   display: flex;
   justify-content: center;
-
+  background: rgba(0, 0, 0, 0.55);
 }
 
 .input-container {
@@ -80,9 +80,9 @@ input {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 20px;
-  background: #fff;
+  background: #bbb;
   outline: none;
-
+  font-family: 'Nunito', sans-serif, monospace;
 }
 
 /* Button */
@@ -99,7 +99,9 @@ button {
   outline: none;
 }
 
-
+button:hover {
+  filter: brightness(110%);
+}
 
 /* Countdown */
 ul {
@@ -153,7 +155,8 @@ li span {
   }
 
   .container {
-
+    min-width: unset;
+    width: 90vw;
     min-height: 245px;
     padding: 20px;
     margin: 10px;
