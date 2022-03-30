@@ -7,9 +7,9 @@ const countdownElTitle = document.getElementById('countdown-title')
 const countdownBtn = document.getElementById('countdown-button')
 const timeElements = document.querySelectorAll('span')
 
-let countdownTitle = ' '
-let countdownDate = ' '
-let countdownValue = Date
+let countdownTitle = ''
+let countdownDate = ''
+let countdownValue = new Date()
 let countdownActive
 let savedCountdown
 
@@ -70,8 +70,8 @@ function updateCountdown(e) {
         title: countdownTitle,
         date: countdownDate
     }
-    console.log(savedCountDown)
-    localStorage.setItem('countdown', JSON.stringify(savedCountDown))
+    console.log(savedCountdown)
+    localStorage.setItem('countdown', JSON.stringify(savedCountdown))
 
     // console.log(countdownTitle, countdownDate)
     // check for valid date
